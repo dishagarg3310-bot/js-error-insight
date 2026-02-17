@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f7fb;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* background shapes */
+body::before,
+body::after {
+  content: "";
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  filter: blur(120px);
+  z-index: -1;
+}
+
+body::before {
+  background: #b3d4ff;
+  top: 50px;
+  left: -100px;
+}
+
+body::after {
+  background: #d6c8ff;
+  bottom: 50px;
+  right: -100px;
+}
+
+/* main card */
+.container {
+  width: 65%;
+  margin: 60px auto;
+  background-color: #ffffff;
+  padding: 28px 32px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* heading */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 6px;
+}
+
+/* subtitle */
+.tagline {
+  text-align: center;
+  color: #6c7a89;
+  margin-bottom: 28px;
+  font-size: 14px;
+}
+
+/* textarea */
+textarea {
+  width: 100%;
+  height: 180px;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 6px;
+  border: 1px solid #ccd6e0;
+  resize: none;
+  outline: none;
+}
+
+textarea:focus {
+  border-color: #4a90e2;
+  background-color: #f9fbff;
+}
+
+/* button */
+button {
+  margin-top: 18px;
+  padding: 10px 26px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  background-color: #357abd;
+}
+
+/* output box */
+.output-box {
+  margin-top: 26px;
+  padding: 18px;
+  background-color: #f3f6fb;
+  border-left: 4px solid #4a90e2;
+  border-radius: 6px;
+  color: #2c3e50;
+}
+
+/* code block */
+pre {
+  background-color: #e9eef6;
+  padding: 12px;
+  border-radius: 5px;
+  overflow-x: auto;
+  font-size: 13px;
+}
+
+/* output headings */
+.output-box h3 {
+  margin-top: 0;
+  color: #c0392b;
+}
+
+.output-box h4 {
+  margin-bottom: 6px;
+  color: #34495e;
+}
+.badge {
+  display: inline-block;
+  margin: 0 auto 15px;
+  padding: 4px 10px;
+  font-size: 12px;
+  background-color: #e8f0ff;
+  color: #4a90e2;
+  border-radius: 12px;
+}
+.clear-btn {
+  margin-left: 10px;
+  background-color: #e0e6ef;
+  color: #333;
+}
+
+.clear-btn:hover {
+  background-color: #d3dae6;
+}

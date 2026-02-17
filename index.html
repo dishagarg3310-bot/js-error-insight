@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JS Error Insight</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>JS Error Insight</h1>
+    <span class="badge">JavaScript Only</span>
+
+    <p class="tagline">
+      A simple tool to help beginners understand JavaScript errors
+    </p>
+
+    <textarea id="codeInput" placeholder="Paste your JavaScript code here..."></textarea>
+
+    <button onclick="analyzeUserCode()">Check My Code</button>
+
+    <button class="clear-btn" onclick="clearAll()">Clear</button>
+
+    <div id="output" class="output-box">
+      <!-- result yahin dikhega -->
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
